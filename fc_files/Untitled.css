@@ -1,0 +1,33 @@
+/* Enter Your Custom CSS Here */
+h3.entry-title {
+  pointer-events: none;
+  cursor: default;
+}
+div.entry-meta {
+  pointer-events: none;
+  cursor: default;
+}
+header.page-header {
+	display: none;
+	
+}
+/*
+     FILE ARCHIVED ON 00:46:13 Aug 11, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 05:30:10 Jun 09, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 98.001
+  exclusion.robots: 0.072
+  exclusion.robots.policy: 0.061
+  RedisCDXSource: 0.547
+  esindex: 0.008
+  LoadShardBlock: 81.786 (3)
+  PetaboxLoader3.datanode: 149.794 (4)
+  load_resource: 208.441
+  PetaboxLoader3.resolve: 125.455
+*/
