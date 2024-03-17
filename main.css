@@ -30,7 +30,7 @@ body::before {
 }
 
 .bg {
-    height: 6000px;
+    width: 6000px;
     position: absolute;
     top: 0;
     left: 0;
