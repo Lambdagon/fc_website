@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "TF2 Build";
+    src: url(tf2build.ttf);
+}
+
+:root {
+    --fc-purple: rgb(141, 1, 193);
+    --fc-purple-dark: rgb(41, 0, 57);
+    --fc-purple-light: rgb(167, 109, 191);
+    --fc-purple-light-t: rgba(167, 109, 191, 0.4);
+}
+
+body {
+    overflow: hidden;
+    margin: 0px;
+    background-image: radial-gradient(var(--fc-purple-light-t) 33.2%, transparent 33.2%),
+    radial-gradient(var(--fc-purple-light-t) 33.2%, transparent 33.2%);
+    background-size: 6px 6px;
+    background-color: rgb(31, 31, 31);
+}
+
+body::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(180deg, transparent, var(--fc-purple-dark));
+}
+
+.bg {
+    height: 6000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: radial-gradient(var(--fc-purple-dark) 33.2%, transparent 33.2%),
+    radial-gradient(var(--fc-purple-dark) 33.2%, transparent 33.2%);
+    background-size: 3px 100px;
+    background-color: transparent;
+    animation: slideTB 20s linear infinite;
+}
+
+#header {
+    margin: 0px;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-image: url(logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 2;
+    filter: drop-shadow(0px 1px 50px black);
+}
+
+#navbar {
+    display: flex;
+    position: absolute;
+    margin: 0;
+    bottom: 0px;
+    height: 15%;
+    width: 100%;
+    background-color: rgba(34, 34, 34, 0.8);
+    border-top: 2px solid rgb(51, 51, 51);
+    outline: 2px dashed rgb(51, 51, 51);
+    z-index: 2;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-family: "TF2 Build";
+    font-size: 30px;
+    padding: 20px;
+    border-left: 2px solid rgb(51, 51, 51);
+    border-right: 2px solid rgb(51, 51, 51);
+}
+
+#navbar a::after {
+    content: " ";
+    display: block;
+    width: 0%;
+    height: 5%;
+    margin-top: 4px;
+    background-color: transparent;
+    transition: background-color 0.2s, width 0.2s, filter 0.2s;
+}
+
+#navbar a:hover::after {
+    background-color: white;
+    width: 100%;
+    filter: drop-shadow(0px 0px 4px var(--fc-purple-light));
+}
+
+@keyframes slideLR {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 99%;
+    }
+}
+
+@keyframes slideTB {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-33.3333%);
+    }
+}
