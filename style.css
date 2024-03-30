@@ -47,25 +47,6 @@ iframe{
 	animation: slide 2000s infinite;
 }
 
-#screenCover{
-	position: absolute;
-	margin: -8px;
-	height: 101vh;
-	width: 100vw;
-	background-color: black;
-	background-image: url(./res/enterScreen.gif);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 1024px;
-	filter: saturate(0) brightness(2);
-	image-rendering: pixelated;
-	z-index: 4;
-	transition: all 0.5s ease;
-	cursor: pointer;
-	-webkit-tap-highlight-color: transparent;
-}
-
-
 .logo{
 	height: 90px;
 	padding-top: 10px;

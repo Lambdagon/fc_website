@@ -21,7 +21,7 @@ body {
 
 body::before {
     content: " ";
-	z-index: -1;
+	z-index: -3;
     position: fixed;
     top: 0;
     left: 0;
@@ -33,7 +33,7 @@ body::before {
 .bg {
     width: 6000px;
     position: fixed;
-	z-index: -1;
+	z-index: -3;
     top: 0;
     left: 0;
     bottom: 0;
