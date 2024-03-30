@@ -21,6 +21,7 @@ body {
 
 body::before {
     content: " ";
+	z-index: -1;
     position: absolute;
     top: 0;
     left: 0;
@@ -32,6 +33,7 @@ body::before {
 .bg {
     width: 6000px;
     position: absolute;
+	z-index: -1;
     top: 0;
     left: 0;
     bottom: 0;
@@ -66,9 +68,9 @@ body::before {
 
 #navbar {
     display: flex;
-    position: absolute;
+    position: fixed;
     margin: 0;
-    bottom: 0px;
+    bottom: 0;
     height: 15%;
     width: 100%;
     background-color: rgba(34, 34, 34, 0.8);
