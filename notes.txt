@@ -1,0 +1,390 @@
+Fortress Connected Unnamed 2024 Update
+
+The new additions in this update are as follows:
+
+
+- New class: "Agent" from The Espionage Project
+
+	- This class is in an early stage of development
+
+	- Accessible via the console command "join\_class agent"
+
+- New Maps:
+
+	- Ravenholm (King of The Hill) [Map by Octmari]
+	
+- New Enginer buildable "Bounce Pad" (Can be used by equipping the bounce pad PDA)
+
+- New weapons:
+
+	- Displacer Cannon
+
+		- An extremely powerful primary weapon for the Mercenary based on the Superweapon originally featured in Team Fortress 2 Classic: Deathmatch
+
+	- Enforcer's Grenade
+
+		- A misc weapon for the Enforcer that;
+			- Starts a grenade priming animation
+			- Forces the player to third person
+			- Allows the Enforcer to charge in dealing explosive damage to himself and nearby enemies
+
+	- Annabelle
+
+		- A new primary weapon for John based on Father Grigori's signature weapon in Half-Life 2
+
+	- Lever Action Rifle
+
+		- A new primary weapon for the Mercenary that;
+			- Deals crits on headshots
+			- Cannot Scope
+
+- New Weapon Attributes:
+
+	- max_ammo (to override ammo from the playerclass script file directly without using ammo modifiers)
+
+	- burst fire
+
+	- Damage versus breakables (breakable props and func_breakables)	
+	
+
+- New cosmetics
+
+	- Max's Severed Head 
+
+	- Faker's Ears 
+
+	- Pip-Boy 
+
+	- Heavy Tourism 
+
+	- Brock's Locks 
+
+	- Triad Trinket 
+
+	- Mann of the House
+
+	- Combustible Cutie
+
+	- Earbuds
+	
+	- Dead of Night
+
+- New Console commands:
+
+	- Added fc\_picmip (allows mat\_picmip to go between 10 and -10)
+
+	- Added mp\_reset to the options in the Create Server menu
+
+	- Added cvar to enable/disable overheal decay
+
+	- Added fc\_enable\_team\_glow to the options menu
+
+- Updated the Taunt System
+
+	- Fixed moving taunts
+
+	- Added loadout menu for taunts specifically
+
+	- Added many taunts from Live Team Fortress 2 for players to use
+
+
+- Weapon changes
+
+	- Assault Rifle now uses proper Burst Fire 
+
+	- The Crowbar now uses the dmg vs breakables attribute
+
+	- Redid the Garbage Launcher models (currently WIP)
+
+	- Renamed the Model 37 to the "Trench Reaper", and modified its model
+	
+	- Added right-click bayonet attack to the "Trench Reaper"
+
+	- Made the Handy Little Pardner only force you to have mini dispenser rather than both mini dispenser and sentry 
+
+	- The Handy Little Pardner now uses it's proper v_model
+
+	- Updated the Fortunate Son and Assault Rifle to use the burst attribute 
+	
+	- Telecon can now equip The Short Circut
+	
+	- Fixed Super Shotgun spread. dmg, and reload
+
+- Class changes
+
+	- Telecon can now build Teleporters
+	
+	- Added the Enforces Grenade mechanic
+	
+	- Updated the Repressor's Textures 
+	
+	- Gave Saxton Hale proper c_arms
+
+	- Massive overhaul of Telecon's model
+
+	- Saxton and Telecon now have updated class icons
+
+	- Updated PDA viewmodels for Engineer and Telecon
+
+	- Added bodygroups for Sniper & Medic glasses
+
+	- Added bodygroup for Heavy bandolier
+
+	- Mercenary uses Soldier's animations for c\_model weapons
+	
+
+- Four-Team support changes:
+
+	- Four-team assets use the Fortress Obscura colour palette
+
+	- A lot of additional four-team assets have been created for mappers to utilise
+
+	- Redid all player model skins to not be just ripped from TF2C, using the new palette
+
+	- Fixed class select for GRN and YLW showing the wrong color cosmetics
+
+	- Added four-team skins for:
+
+		- Most particles
+
+		- All player c\_arms 
+
+		- Mercenary zombie model (also his skin colour has been fixed)
+
+		- Grenades
+
+		- Buildings
+
+		- Taunt props (only a few so far) 
+
+		- Crowbar
+
+		- Quick-Fix charge
+
+		- "Random Class" menu option
+
+- Miscellaneous Changes
+
+	- Updated the Main Menu
+	
+		-Updated menu BG's
+		
+		- Updated Men to the main menu
+
+		- Added credits panel
+
+		- Fixed the blog link
+
+		- Changed the menu music
+
+	- Updated the Loadout menu
+
+		- The new loadout UI works like team-colour switching in popular community-made HUDs
+
+		- Added a 4-team color switch button to loadout screen
+
+		- Updated the loadout preview to support moving the class model in more directions
+
+		- Adjusted position of buttons within loadout
+
+		- Adjusted Engineer's PDA slot to be replacing the correct item
+
+		- Fixed Loadout panel icons being offset
+
+	- Changes to TFBots:
+
+		- Added missing logic for GRN and YLW TFBots
+
+		- Made tf_bot_quota_pvp not apply to Opposing Co-op
+
+		- Bot medics will now switch to primary weapon if they are not healing to attack other enemies
+
+
+	- Updated d1\_canals\_05
+
+	- Overhauled the Conscript NPC model
+
+	- Updated "Gus"
+
+
+- Updated Discord Rich Presence
+
+- Added "stuck" console command, can be disabled by the server with fc_disable_stuck
+
+- Updated weapon soundscripts to reduce content bloat
+
+- Implemented TF_COND_DISGUISE_WEARINGOFF in case of future use
+
+- Adjusted push from friendly npcs.
+
+- Moved grenades to a seperate ammo type as to not conflict with other throwables
+
+- Updated scenes.image to match live TF2's
+
+- Updated the FGD for mappers
+
+- Updated Grenade Throw animations for all classes (Placeholder)
+
+- Update M1 Garand Textures
+
+- Added a developer 1 message about how long it takes gameinterface to perform LevelInit and LevelShutdown. 
+
+- Added spawn points and a couple minor changes to hls05amrl.edt
+
+- Add W.I.P Armor System (fc_armor_enabled 1)
+
+- Update HUD system to better work with Live TF2 custom HUD mods
+
+- Add Grenade Ammo Pack
+
+- Added Mega Health Kit and Tiny Health Kit pickups
+
+- Add cosmetics on ragdoll when dying
+
+- Updated the localization files
+
+- Add 4 team player destruction logic 
+
+- allow head_scale attribute to effect all classes
+
+- Removed Admin Abuse Weapons 
+
+- Remove HL1 Menu Sounds
+
+Bug Fixes:
+
+- Fix EMP Grenade using incorrect DMG type 
+
+- Fix Telecon using scout voice lines 
+
+- Fixed logic error in tf_powerups preventing ducks from spawning on carnival of carnage
+
+- Fixed tf_cond_halloween_bomb_head not actually putting a bomb onto the player's head
+
+- Fixed improved medic, heavy, and sniper models lacking flag and prop attachments
+
+- Fix Beggars Bazooka reload 
+
+- Fix Loose Cannon explosion timings
+
+- fixed 4 team, team and class select not working in specific gamemodes when they are 4 teamed 
+
+- Fix Detach Functions not working on weapons 
+
+- Fixed Saxton C_arms missing bones 
+
+- Fixed Marked For Death Not Working as Intended
+
+- Restored voicelines for the Ap-Sap
+
+- Fixed a crash that can occur on physics simulations for entities that are marked for deletion
+
+- Fixed the AR2's weapon table being incorrect. 
+
+- Fixed the Jalopy's seat
+
+- Re-implemented a fix for game_text.res change
+
+- Fixed hit numbers on players not showing
+
+- Fixed hit numbers on npcs being comically high above their head
+
+- Fixed hit boxes on players
+
+- Fixed an issue with Heavy's taunts not working 
+
+- Fixed several weapon behaviours:
+
+	- Fixed the Ullapool Caber always dealing critical damage
+
+	- Fixed the Amputator's taunt not working
+
+	- Fixed the Eureka Effect's teleport not working
+
+	- Fixed the Red-Tape Recorder
+
+	- Fixed slot-based tf_weapon_revolvers
+
+	- Fixed a bug where Syringe Gun needles were not spawning
+
+	- Fixed Civilian's boost meter not functioning as intended
+
+	- Fixed damage scaling attributes to Sniper Rifle weapons
+
+	- Fixed an exploit where the Ubersaw could penetrate walls
+
+	- Fixed Spy's gas grenade not emitting particles
+
+- Fixed Saxton's class selection animation
+
+- Fixed reload animation for tf_weapon_shotgun_primary in some situations
+
+- Fixed being able to taunt in vehicles
+
+- Prevented a crash if shadow manager is not setup
+
+- Fixed a crash when typing "addcond" into console
+
+- Fixed green crit material proxy being blue
+
+- Fixed a bug where custom classes didn't know what weapons they were supposed to hold (equipping gravity guns instead of revolvers and shovels instead of pistols)
+
+- Fixed a bug where GRN team members could always see enemy health
+
+- Fixed attachments on v\_models (such as shell ejections)
+
+- Fixed fc\_collide\_with\_npcs cvar
+
+- Fixed a missing train on transition to hls07amrl
+
+- Fixed classes past the index of Mercenary not having their loadout applied on spawn
+
+- Fixed the 3D player class in the HUD using only RED cosmetics
+
+- Fixed an issue with items dropped by item_item_create not being able to pick up
+
+- Fixed a major exploit in the vote system
+
+- Fix a crash that can occur on model scale change
+
+- Fixed monster_tentacle hitbox update breaking (can still happen rarely)
+
+- Fixed monster_tentacle take damage death and re-emerge.
+
+- Fixed certain situations where players could be rendered on an angle if multiple players exited vehicles near the same time as each other
+
+- Fixed sniper and rail type projectiles not passing through fences and portals
+
+
+- Added mounting support for the following sourcemods;
+
+	- Build 2001 - Beta-inspired sourcemod with its own twist on things, very cool!
+	https://www.moddb.com/mods/betabuild2001
+
+	- Entropy Zero: Uprising - EZ mod that takes place during the Uprising in City 17! Be the bad guy!
+	https://www.moddb.com/mods/entropy-zero-uprising
+
+	- Half Life 2: Google Translate Edition - From the same folks who made the mods for HL, BS and OF comes their HL2 version, fully working in FC! Enjoy the randomness.
+	https://www.moddb.com/mods/half-life-2-google-translate-edition
+
+	- The Trap 2: Mindlock - Crazy Russian mod about aliens with a strange mix of action, puzzles and horror. Strange mod but very cool! Just make sure you don't use the Steam version! Check the link for further information on the sourcemod version.
+	https://steamcommunity.com/app/638800/discussions/0/1479857071246952794/
+
+	- They Hunger: Source - The classic GoldSRC game being remade in Source, working in FC!
+	https://www.moddb.com/mods/they-hunger-source
+
+	- PARALLELS
+	https://www.moddb.com/mods/parallels-a-half-life-2-single-player-mod
+
+	- jump_portal_b83: popular gmod jump map, pretty fun, try it with friends!
+	https://steamcommunity.com/sharedfiles/filedetails/?id=1472108955
+
+	- Resident Evil 2 Source: Play the classic horror game turned sourcemod, with friends!
+	https://www.moddb.com/mods/resident-evil-2-source
+
+	- Gasmask Citizen 21 - Goofy "HL2 beta" game. Mostly works, fun to mess around with.
+	https://www.moddb.com/mods/gasmask-citizen-21
+	
+	- Impelemented but not working/needs fixed:
+	Goreagulation, Requiem of Science, Snowdrop Escape, Arctic Adventures Episodes
+
