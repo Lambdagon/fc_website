@@ -8,16 +8,17 @@
     <link rel="shortcut icon" href="favicon.png" type="image/png">
     <meta content="Fortress Connected" property="og:title" />
     <meta content="Fortress Connected is a bombastic conglomeration of a bunch of Team Fortress based modes, mods, and whatever the hell else we want to add to it." property="og:description" />
-    <meta content="https://lambdagon.github.io/fc_website/" property="og:url" />
-    <meta content="https://lambdagon.github.io/fc_website/favicon.png" property="og:image" />
+    <meta content="https://www.fortressconnected.com/" property="og:url" />
+    <meta content="https://www.fortressconnected.com/favicon.png" property="og:image" />
     <meta content="#8D01C1" data-react-helmet="true" name="theme-color" />
     <style> 
         #modal {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: tf2, Arial, Helvetica, sans-serif;
             display: none;
             position: absolute;
             z-index: 99999999;
             width: 100%;
+			font-size: 20px;
             height: 100%;
             background: rgba(0, 0, 0, 0.7);
             top: 0;
@@ -28,11 +29,11 @@
             align-items: center;
         }
         #modalblock {
-            width: 500px;
+            width: 800px;
             background-color: rgb(31, 31, 31);
             color: white;
             text-align: center;
-            padding: 5px;
+            padding: 12px;
             border: 1px solid;
             outline: 3px rgb(31, 31, 31) solid;
             border-radius: 6px;
@@ -62,7 +63,6 @@
     </div>
     <div id="navbar">
         <a onclick="show();" style="cursor: pointer;">ABOUT</a>
-        <a href="https://github.com/Lambdagon/fc">GITHUB</a>
         <a href="https://discord.gg/8jeWSWaBXN">DISCORD</a>
 		<a href="credits.html">CREDITS</a>
         <a href="">BLOG</a>
@@ -70,7 +70,7 @@
     <div id="modal">
         <div id="modalblock">
             <p style="text-align: right; cursor: pointer; margin: 0;">
-            <a id="modalblockc" href="#" onclick="closeFe();" >Close</a>
+            <a id="modalblockc" href="#" onclick="closeFe();" >X</a>
             </p>
             <p style="text-align: center;">
             Fortress Connected is a bombastic conglomeration of a bunch of Team Fortress based modes, mods, and whatever the hell else we want to add to it.
