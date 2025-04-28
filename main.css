@@ -3,6 +3,11 @@
     src: url(tf2build.ttf);
 }
 
+@font-face {
+    font-family: "TF2";
+    src: url(tf2.ttf);
+}
+
 :root {
     --fc-purple: rgb(141, 1, 193);
     --fc-purple-dark: rgb(41, 0, 57);
