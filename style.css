@@ -582,4 +582,59 @@ iframe{
 	font-family: abstract;
 	src: url(./res/ABSTRACT.TTF);
 }
+
+/* socials */
+
+.socials{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #0000005e;
+	padding: 5px 0px;
+}
+
+.socialProfile{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 235px;
+	height: 235px;
+	background-color: #4224604f;
+	text-align: center;
+	padding: 2px 9px;
+	margin: 5px;
+	border: solid;
+    border-color: transparent;
+}
+
+.socialProfile:hover {
+    border: solid;
+    border-image-source: url('./res/selector.svg');
+    border-image-slice: 5%;
+}
+
+.socialName{
+	color: #cccccc;
+	font-size: 28.4px;
+}
+
+.socialProfile img:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1053px) {
+	.socialProfile{
+		width:120px;
+	}
+}
+
+.socialProfile {
+	text-decoration: none;
+}
+
+.socialProfile img {
+	width: 149.1px;
+}
+
 html { overflow-y: scroll; overflow-x:hidden; }
