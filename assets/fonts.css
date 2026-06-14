@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "TF2 Build";
+    src: url(tf2build.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "TF2";
+    src: url(tf2secondary.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Quake";
+    src: url(customfonts/quaketerminal.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Frak";
+    src: url(customfonts/frak.woff) format("woff");
+}
+
+@font-face {
+    font-family: "AndyBold";
+    src: url(customfonts/AndyBold.woff) format("woff");
+}
+
+.Default {
+    font-family: "TF2 Build";
+    font-size: 16px;
+}
+
+.Quake {
+    font-family: "Quake";
+    letter-spacing: -2px;
+    font-size: 13px;
+}
+
+.Frak {
+    font-family: "Frak";
+    font-size: 20px;
+}
+
+.AndyBold {
+    font-family: "AndyBold";
+    font-size: 20px;
+}
+
+.ComicSans {
+    font-family: "Comic Sans MS", cursive;
+}

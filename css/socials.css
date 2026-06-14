@@ -1,0 +1,60 @@
+.socials {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.socials a {
+    display: block;
+    text-shadow: none;
+    font-size: 42px;
+    rotate: -3deg;
+    scale: 1;
+    transition: rotate 0.5s, scale 0.5s;
+    width: fit-content;
+    margin-bottom: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "TF2";
+    color: white;
+    text-shadow: #8e68e8 2px 1px;
+}
+
+.socials a:hover {
+    rotate: -5deg;
+    scale: 1.3;
+}
+
+.socials a:before {
+    content: "";
+    display: inline-block;
+    width: 42px;
+    aspect-ratio: 1;
+    background-image: url(../assets/socials/bsky.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    rotate: 3deg;
+    margin-right: 18px;
+    margin-left: 24px;
+}
+
+.socials .wiki:before {
+    background: none;
+}
+
+.socials .dc:before {
+    background-image: url(../assets/socials/discord.svg);
+}
+
+.socials .yt:before {
+    background-image: url(../assets/socials/youtube.svg);
+}
+
+.socials .tw:before {
+    background-image: url(../assets/socials/twitter.svg);
+}
+
+.socials .st:before {
+    background-image: url(../assets/socials/steam.svg);
+}

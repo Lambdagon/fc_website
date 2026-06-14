@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#background, #bg1, #bg2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120vw;
+    height: 120vh;
+    margin-left: -10vw;
+    margin-top: -10vh;
+    background: url(../assets/bg.png);
+    background-size: cover;
+    background-position: center;
+    transition: 0.6s translate;
+}
+
+#bg1 {
+    background-image: url(../assets/bg1.png);
+}
+
+#bg2 {
+    background-image: url(../assets/bg2.png);
+}
+
+body:has(.botel:hover) #bg1 {
+    translate: 0px 70px;
+}
+
+body:has(.botel:hover) #bg2 {
+    translate: 0px -70px;
+}
+
+.polka, #bottombar::before, #bottombar::after {
+  background-image: 
+    radial-gradient(rgb(255, 255, 255) 34.4%, transparent 34.4%),
+    radial-gradient(rgb(255, 255, 255) 34.4%, transparent 34.4%);
+  background-position: 0px 0px, 4px 4px;
+  background-size: 8px 8px;
+  background-color: rgb(45, 45, 50);
+}
+
+.padbox {
+    padding: 60px;
+}
+
+#bottombar {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #2d2d32;
+    overflow: hidden;
+    gap: 100px;
+    z-index: 9;
+}
+
+#bottombar::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
+    width: 30px;
+    height: 300px;
+    rotate: 30deg;
+    bottom: 0;
+    box-shadow: 20px 1px 0px 0px white, 34px 1px 0px 0px rgba(142,104,232,0.75), 39px 1px 0px 0px rgba(204, 182, 255, 0.75);
+    transition: rotate 0.9s, scale 0.5s;
+}
+
+#bottombar::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    width: 30px;
+    height: 300px;
+    rotate: -30deg;
+    bottom: 0;
+    box-shadow: -20px 1px 0px 0px white, -34px 1px 0px 0px rgba(142,104,232,0.75), -39px 1px 0px 0px rgba(204, 182, 255, 0.75);
+    transition: rotate 0.9s, scale 0.5s;
+}
+
+.botel {
+    width: 150px;
+    text-align: center;
+    font-family: "TF2 Build", monospace;
+    transform: rotate(3deg) scale(1);
+    transition: transform 0.2s;
+    text-shadow: #8e68e8 4px 2px;
+}
+
+#bottombar:has(.botel:hover)::before {
+    rotate: 27deg;
+    scale: 1.1;
+}
+
+#bottombar:has(.botel:hover)::after {
+    rotate: -27deg;
+    scale: 1.1;
+}
+
+#bottombar:has(.botel:hover) .botel {
+    transform: rotate(5deg) scale(0.8);
+}
+
+.botel:hover {
+    transform: rotate(0deg) scale(1.3) !important;
+    text-shadow: #8e68e8 4px 3px !important;
+}
+
+.botel a {
+	color: white;
+	text-decoration: none;
+	font-size: 28px;
+	rotate: 2deg;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "TF2 Build";
+    font-weight: 100;
+    color: white;
+    text-shadow: #8e68e8 4px 3px;
+}
+
+.htitle {
+    font-size: 72px;
+    rotate: 2deg;
+    text-align: center;
+}
+
+p, li {
+    font-family: "TF2";
+    color: white;
+    text-shadow: #8e68e8 2px 1px;
+}
+
+*::selection {
+    background-color: #8e68e8;
+}
+
+#logo {
+    background: url(../assets/logo.png);
+    width: 100%;
+    height: 20vw;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(4px 4px 0px #8e68e8);
+}
+
+#blogsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.blogThumb {
+    display: flex;
+    width: 320px;
+    margin: 10px;
+    padding-bottom: 10px;
+    aspect-ratio: 16 / 9;
+    background-image: url(../assets/blogs/thumbnails/placeholder.png);
+    background-size: contain;
+    font-family: "TF2 Build";
+    color: white;
+    justify-content: center;
+    align-items: end;
+    cursor: pointer;
+}
+
+#blogView * {
+    text-shadow: none;
+}
+#blogView a {
+    color: #8e68e8;
+}
+#blogView > div > h1 {
+    font-size: 40px;
+    text-align: center;
+    rotate: -1deg;
+    text-shadow: #8e68e8 4px 2px;
+}
+
+#blogView img {
+    width: 100%;
+}
+
+#backButton {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../assets/back.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}

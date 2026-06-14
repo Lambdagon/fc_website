@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="14.022917mm"
+   height="11.641666mm"
+   viewBox="0 0 14.022917 11.641666"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="back.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.8436027"
+     inkscape:cx="3.3408324"
+     inkscape:cy="40.089989"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <symbol
+       id="AigaSymbols.svg:LeftArrow">
+      <title
+         id="title280">Left Arrow</title>
+      <path
+         d="M 9,36 31,14 H 46 L 30,30 H 62 V 42 H 30 L 46,58 H 31 Z"
+         style="stroke:none"
+         id="path280" />
+    </symbol>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-117.29681,-124.44233)">
+    <path
+       style="fill:#ffffff;fill-rule:evenodd;stroke-width:1.3;stroke-miterlimit:9.7;stroke-dasharray:2.81898, 2.81898;stroke-dashoffset:1.12759"
+       d="m 127.08639,124.44233 h -3.96875 l -5.82083,5.82083 5.82083,5.82083 h 3.96875 l -4.23333,-4.23333 h 8.46667 v -3.175 h -8.46667 z"
+       id="path1" />
+  </g>
+</svg>

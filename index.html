@@ -4,79 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fortress Connected</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/png">
-    <meta content="Fortress Connected" property="og:title" />
-    <meta content="Fortress Connected is a co-op and PvP mash-up mod built off of Team Fortress 2. Fight through the world of Half-Life as the Team Fortress 2 cast along with new and old faces!" property="og:description" />
-    <meta content="https://www.fortressconnected.com/" property="og:url" />
-    <meta content="https://www.fortressconnected.com/favicon.png" property="og:image" />
-    <meta content="#8D01C1" data-react-helmet="true" name="theme-color" />
-    <style> 
-        #modal {
-            font-family: tf2, Arial, Helvetica, sans-serif;
-            display: none;
-            position: absolute;
-            z-index: 99999999;
-            width: 100%;
-			font-size: 20px;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            justify-content: center;
-            align-items: center;
-        }
-        #modalblock {
-            width: 800px;
-            background-color: rgb(31, 31, 31);
-            color: white;
-            text-align: center;
-            padding: 12px;
-            border: 1px solid;
-            outline: 3px rgb(31, 31, 31) solid;
-            border-radius: 6px;
-            height: 500px;
-        }
-        #modalblockc {
-            color: white;
-            text-transform: uppercase;
-            font-family: monospace;
-            text-decoration: none;
-            padding: 4px;
-            background-color: rgb(15, 15, 15);
-            margin-top: 5px;
-        }
-        #modalblockc:hover {
-            background-color: rgb(50, 50, 50);
-        }
-    </style>
+    <link rel="stylesheet" href="assets/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/socials.css">
+    <link rel="stylesheet" href="css/cred.css">
 </head>
 
 <body>
-    <div class="bg"></div>
-    <div id="header">
-        <img id="logo" src="logo.svg"></img>
-		<div>Fortress Connected is a co-op and PvP mash-up mod built off of Team Fortress 2.<br>Fight through the world of Half-Life as the Team Fortress 2 cast along with new and old faces!</div>
-		<br>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/j_Rr5Rajcnw?si=d49AG0eDHwkcBeeE&amp;controls=0" title="YouTube video player" frameborder="0" 
-		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-		</iframe>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/8758GJZZN0Q?si=d49AG0eDHwkcBeeE&amp;controls=0" title="YouTube video player" frameborder="0" 
-		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-		</iframe>
-		
+
+    <div id="background"></div>
+    <div id="bg1"></div>
+    <div id="bg2"></div>
+
+
+    <div class="pages">
+        <div class="pageLogic" id="about">
+            <div id="logo">
+            </div>
+            <p>Fortress Connected is a co-op and PvP mash-up mod built off
+                of Team Fortress 2.
+                Fight through the world of Half-Life as the Team Fortress 2 cast along with new and old faces!</p>
+            <div class="socials">
+            <a href="https://discord.gg/FT2GthBwZv" target="_blank" class="dc"></a>
+            <a href="https://bsky.app/profile/fortressconnected.com" target="_blank" class="bsky"></a>
+            <a href="https://www.youtube.com/@FortressConnected" target="_blank" class="yt"></a>
+            <a href="https://x.com/JohnFreemanFC" target="_blank" class="tw"></a>
+            <a href="https://store.steampowered.com/app/3561600/Fortress_Connected/" target="_blank" class="st"></a></div>
+            <h1>Featuring:</h1>
+            <li>The ability to play through Half-Life 2 and its episodes, Left 4 Dead 1, and more as the TF2 cast alone or with friends!</li>
+            <li>Old and new custom classes based on new designs or familiar faces from other mods!</li>
+            <li>Custom coop campaign experiences with updating support for more in the future!</li>
+            <li>Special features like Grenades, Armour, and more!</li>
+            <li>New weapons, buildables, and achievements!</li>
+            <li>New types of enemies and allies you can find in your adventures.</li>
+            <li>Steam Workshop support for custom mods and maps!</li>
+            <li>Full Half-Life 2: Deathmatch support with a TDM gamemode! </li>
+            <li>Support for your entire TF2 inventory! </li>
+            <li>All this and more to come in the future! </li>
+            <div class="padbox"></div>
+        </div>
+        <div class="pageLogic" id="blog">
+            
+            <h1 style="text-align: center; font-size: 60px; rotate:-2deg;">Blogs</h1>
+            <div id="blogsContainer">
+            </div>
+            <div class="padbox"></div>
+        </div>
+        <div class="pageLogic" id="blogView">
+            <a id="backButton" onclick="blogGoback()"></a>
+        </div>
+        <div class="pageLogic" id="credits">
+            <h1 style="text-align: center;">Fortress Connected Dev Team</h1>
+            <div class="creditsContainer" id="fcdevs">
+
+            </div>
+            <h1 style="text-align: center;">Contributors</h1>
+            <div class="creditsContainer" id="contributors"></div>
+            <div class="padbox"></div>
+        </div>
     </div>
-	
-    <div id="navbar">
-        <a href="index.html">HOME PAGE</a>
-		<a href="https://store.steampowered.com/app/3561600/Fortress_Connected/">STEAM</a>
-		<a href="socials.html">SOCIALS</a>
-        <a href="https://discord.gg/FT2GthBwZv">DISCORD</a>
-		<a href="credits.html">CREDITS</a>
-		<a href="https://wiki.fortressconnected.com">WIKI</a>
-        <!--<a href="blog_latest.html">BLOG</a>-->
     </div>
+
+    <div id="bottombar">
+        <div class="botel">
+            <a href="#">ABOUT</a>
+        </div>
+
+        <div class="botel">
+            <a href="#blog">BLOG</a>
+        </div>
+        <div class="botel">
+            <a href="#credits">CREDITS</a>
+        </div>
+        <div class="botel">
+            <a target="_blank" href="https://wiki.fortressconnected.com">WIKI</a>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="credits.js"></script>
+    <script src="blog.js"></script>
 </body>
+
 </html>

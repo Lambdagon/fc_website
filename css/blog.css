@@ -1,0 +1,27 @@
+html {
+    scrollbar-color: #313131 #1f1f1f;
+}
+body {
+    background-color: transparent;
+    color: #f5f5f5;
+    
+}
+p, a {
+    font-family: "TF2";
+}
+a {
+    color: #8e68e8;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+    background-color: #8e68e8;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "TF2 Build";
+    letter-spacing: 1px;
+}
+
+*::selection {
+    background-color: #8e68e8;
+}
