@@ -23,6 +23,16 @@
     src: url(customfonts/AndyBold.woff) format("woff");
 }
 
+@font-face {
+    font-family: "yow";
+    src: url(customfonts/yow.woff) format("woff");
+}
+
+@font-face {
+    font-family: "futurot";
+    src: url(customfonts/futurot.woff) format("woff");
+}
+
 .Default {
     font-family: "TF2 Build";
     font-size: 16px;
@@ -41,6 +51,16 @@
 
 .AndyBold {
     font-family: "AndyBold";
+    font-size: 20px;
+}
+
+.YOW {
+    font-family: "yow";
+    font-size: 20px;
+}
+
+.futurot {
+    font-family: "futurot";
     font-size: 20px;
 }
 
