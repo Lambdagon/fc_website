@@ -49,12 +49,18 @@ body:has(.botel:hover) #bg2 {
     padding: 60px;
 }
 
+#bottomcontainer {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: end;
+}
+
 #bottombar {
     position: absolute;
     display: flex;
     justify-content: center;
     width: 100%;
-    bottom: 0;
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #2d2d32;
